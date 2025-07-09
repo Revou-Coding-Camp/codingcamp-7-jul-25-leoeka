@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="todo-form">
+            <div class="form-row">
+                <input type="text" id="todo-input" placeholder="Masukkan aktivitas..." required />
+                <input type="date" id="date-input" required />
+                <button type="submit" id="add-btn">
+                    <span>+</span>
+                </button>
+            </div>
+        </form>
+
+        <div class="filter">
+            <select id="filter-select">
+                <option value="">-- Filter aktivitas --</option>
+            </select>
+            <button id="clear-btn">Delete all</button>
+        </div>
+
+        <div id="activity-history">
+            <h3>Riwayat aktivitas</h3>
+            <ul id="history-list"></ul>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
